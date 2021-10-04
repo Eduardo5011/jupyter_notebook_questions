@@ -41,14 +41,7 @@ print(is_leap_year(True))
 
  # Question 5
 def is_consecutive(a_list):
-    list1 = [2,3,4,5,6,7]
-    list2 = [1,2,4,5]
+    return sorted(a_list) == list(range(min(a_list), max(a_list)+1))
 
-    for n in list1, list2:
-        if list1 > list2:
-            return True
-        else:
-            False    
-
-    is_consecutive(list1) 
-    is_consecutive(list2)   
+sample_list = [1, 856, 9, 3, 56, 305]
+print(is_consecutive(sample_list))  
